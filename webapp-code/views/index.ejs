@@ -16,7 +16,7 @@
 <link rel='stylesheet' href='/bootstrap/fonts/font-awesome.min.css' />
 
 </head>
-<body onload="loadDoc();">
+<body id="content" onload="loadDoc();">
 
 	<header>
 		<!--Navbar starts-->
@@ -37,7 +37,6 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="index.html">Corporate Gifting</a></li>
 						<li><a href="#"><img class="pd-right"
 								src="images/gift-card.png" alt="Gift-Cards">Gift Cards</a></li>
 						<li><a href="#"><img class="pd-right"
@@ -88,35 +87,28 @@
 					</div>
 				</div>
 			</div>
-			<ul class="list-inline category-section">
-				<li class="rings-section">
-				<a href="#" onmouseover="ringsss();">Rings<i class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
-				<div id="rings-output"></div>
-				  
-				</li>
-				<li class="rings-section">
-				<a href="#" onmouseover="Earringsss();>Earrings<i class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
-				<div id="earrings-output"></div>
-				 
-				</li>
-				<li class="rings-section">
-				<a href="#" onmouseover="pendentsss();">pendents<i class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
-				<div id="pendents-output"></div>
-				
-				
-				</li>
-				<li class="rings-section">
-				<a href="#" onmouseover="arrivals();">new arrivals<i class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
-				<div id="arrivals_output"></div>
-				  
-				
-				
-				</li>
-				<li class="rings-section">
-				<a href="#" onmouseover="goldcoinssection();">gold coins<i class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
-				   <div id="gold_coins_output"></div>
-				  
-				</li>
+			<ul class="nav nav-tabs list-inline  category-section affix-top"
+				data-spy="affix" data-offset-top="180">
+				<li class="rings-section"><a data-toggle="tab" href="#home"
+					onmouseover="ringsss();">Rings<i
+						class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
+					<div id="rings-output"></div></li>
+				<li class="rings-section"><a data-toggle="tab" href="#"
+					onmouseover="Earringsss();>Earrings<i class=" fa fa-angle-down
+					down-angle" aria-hidden="true"></i></a>
+					<div id="earrings-output"></div></li>
+				<li class="rings-section"><a data-toggle="tab" href="#"
+					onmouseover="pendentsss();">pendents<i
+						class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
+					<div id="pendents-output"></div></li>
+				<li class="rings-section"><a data-toggle="tab" href="#"
+					onmouseover="arrivals();">new arrivals<i
+						class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
+					<div id="arrivals_output"></div></li>
+				<li class="rings-section"><a data-toggle="tab" href="#"
+					onmouseover="goldcoinssection();">gold coins<i
+						class="fa fa-angle-down down-angle" aria-hidden="true"></i></a>
+					<div id="gold_coins_output"></div></li>
 			</ul>
 		</div>
 	</div>
@@ -180,6 +172,85 @@
 				</a>
 			</div>
 		</div>
+		<a href="#" class="jumpup" id="back-to-top" title="Back to top"><i
+			class="fa fa-angle-up arrow-up" aria-hidden="true"></i></a>
+		<div class="tab-content">
+			<div id="home" class="viewrings-section">
+				<div class="container">
+					<div class="row">
+						<ul class="list-inline">
+							<p class="design-head">view allrings</p>
+							<span>filter-by</span>
+							<li class="rings-filter">
+								<button type="button" class="btn btn-default">Price</button>
+							</li>
+							<li class="rings-filter">
+								<button type="button" class="btn btn-default">By
+									Category</button>
+							</li>
+							<li class="rings-filter">
+								<button type="button" class="btn btn-default">Material</button>
+							</li>
+							<li class="rings-filter">
+								<button type="button" class="btn btn-default">Gender</button>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings1.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings2.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings3.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings4.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+								<div class="row">
+								<div class="col-xs-4 col-md-4">
+								<span><i class="fa fa-inr" aria-hidden="true"></i> 5502</span>
+								<strike><i class="fa fa-inr" aria-hidden="true"></i>5792</strike>
+								</div>
+								<div class="col-xs-8 col-md-8">
+								<span>The Avalee Gold Ring</span>
+								</div>
+								</div>
+						</div>
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings5.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings6.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings7.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings8.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+						<div class="col-xs-4 col-md-4">
+							<a href="#"><img src="images/rings9.jpg"
+								class="img-responsive" alt="Cinque Terre"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="javascripts/jquery.min.js"></script>
@@ -188,122 +259,7 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- js file -->
-	<script>
-	var rings,earrings,pendents,newarrivals,goldcoins;
-	 function ringsss(){
-		// document.getElementsByClassName("rings-detail").remove();
-		var txt="";
-		txt += "<ul class='rings-detail'>"
-			for (var key in rings) {
-				  if (rings.hasOwnProperty(key)) {
-				    var val = rings[key];
-				    console.log(val);
-			          txt += "<li class='rings-types'><span>" + key + "</span>";
-				      //for (x in val) {
-				          txt +="<ul class='daily-wear'><li>" + val[0] + "</li><li>" + val[1] + "</li><li>" + val[2] + "</li></ul></li>";
-				       // }
-				  }
-			}
+	<script src="javascripts/custom.js"></script>
 
-		      txt += "</ul>"    
-	 
-		      document.getElementById("rings-output").innerHTML = txt;
-	}
-	
-	 function Earringsss(){
-		 var txt="";
-			txt += "<ul class='rings-detail'>"
-				for (var key in earrings) {
-					  if (earrings.hasOwnProperty(key)) {
-					    var val = earrings[key];
-					    console.log(val);
-				          txt += "<li class='rings-types'><span>" + key + "</span>";
-					      //for (x in val) {
-					          txt +="<ul class='daily-wear'><li>" + val[0] + "</li><li>" + val[1] + "</li><li>" + val[2] + "</li></ul></li>";
-					       // }
-					  }
-				}
-
-			      txt += "</ul>"    
-		 
-			      document.getElementById("earrings-output").innerHTML = txt;
-		}
-		function pendentsss(){
-			var txt="";
-			txt += "<ul class='rings-detail' id='pendents-center'>"
-				for (var key in pendents) {
-					  if (pendents.hasOwnProperty(key)) {
-					    var val = pendents[key];
-				          txt += "<li class='rings-types'><span>" + key + "</span>";
-					      //for (x in val) {
-					          txt +="<ul class='daily-wear'><li>" + val[0] + "</li><li>" + val[1] + "</li><li>" + val[2] + "</li></ul></li>";
-					       // }
-					  }
-				}
-
-			      txt += "</ul>"    
-		 
-			      document.getElementById("pendents-output").innerHTML = txt;
-		}
-		function arrivals(){
-			var txt="";
-			txt += "<ul class='rings-detail new-arrivals-center'>"
-				for (var key in newarrivals) {
-					  if (newarrivals.hasOwnProperty(key)) {
-					    var val = newarrivals[key];
-					    console.log(val);
-				          txt += "<li class='rings-types'><span>" + key + "</span>";
-					      //for (x in val) {
-					          txt +="<ul class='daily-wear'><li>" + val[0] + "</li><li>" + val[1] + "</li></ul></li>";
-					       // }
-					  }
-				}
-
-			      txt += "</ul>"    
-		 
-			      document.getElementById("arrivals_output").innerHTML = txt;
-		}
-		function goldcoinssection(){
-			var txt="";
-			txt += "<ul class='rings-detail'>"
-				for (var key in goldcoins) {
-					  if (goldcoins.hasOwnProperty(key)) {
-					    var val = goldcoins[key];
-					    console.log(val);
-				          txt += "<li class='rings-types'><span>" + key + "</span>";
-					      for (x in val) {
-					          txt +="<ul class='daily-wear'><li>" + val[x] + "</li></ul></li>"
-					        }
-					  }
-				}
-
-			      txt += "</ul>"    
-		 
-			      document.getElementById("gold_coins_output").innerHTML = txt;
-		};
-	function loadDoc() {
-		  var xhttp = new XMLHttpRequest();
-		  xhttp.onreadystatechange = function() {
-		    if (this.readyState == 4 && this.status == 200) {
-		     /*  document.getElementById("demo").innerHTML =
-		      this.responseText; */
-		      var json=JSON.parse(this.responseText);
-		      console.log(json);
-		      rings=json.rings;
-		      console.log(rings);
-		      earrings=json.earrings;
-		      console.log(earrings);
-		      pendents=json.pendents;
-		      console.log(pendents);
-		      newarrivals=json.newarrivals;
-		      console.log(newarrivals);
-		      goldcoins=json.goldcoins;
-		      console.log(goldcoins);
-		    }
-		  };
-		  xhttp.open("GET", "data/menu.json", true);
-		  xhttp.send(); 
-		}
-    </script>
 </body>
 </html>

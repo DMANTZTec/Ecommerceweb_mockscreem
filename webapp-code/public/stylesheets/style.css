@@ -22,7 +22,6 @@ ul li a{
 /* common-css-end */
 
 
-
 .toll-free {
     color: #fff;
     text-transform: uppercase;
@@ -75,7 +74,7 @@ ul li a{
  	text-transform:uppercase;
  	text-align:center;
  	position: relative;
- 	max-width: 720px;
+ 	/*max-width: 720px;*/
  	margin: 0 auto
 }
 .category-section > li{
@@ -97,7 +96,7 @@ ul li a{
     background: #fff;
     position: absolute;
     /*top: 37%;*/
-    width: 100%;
+    width: auto;
     padding: 15px  35px 35px 20px;
     border: 1px solid #dfdfdf;
     margin-top: -1px;
@@ -117,7 +116,7 @@ ul li a{
 }
 
 .category-section .rings-section .rings-detail > li{
-	width: 33%;
+	width: auto;
 	float: left;
 	text-align: left;
 }
@@ -184,4 +183,60 @@ ul li a{
 }
 .banner-wrapper .carousel-control:hover {
     transition: 1s;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right:  0px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: rgba(0,0,0,.5);
+    color: black;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all .5s ease;
+    opacity: 0;
+}
+.affix {
+    position: fixed !important;
+    top: 0px;
+    width: 100%;
+    z-index: 9999 !important;
+    background-color: #fff;
+    right: 0;
+  }
+.banner-wrapper .arrow-up{
+	color: #fff;
+	font-size: 27px;
+	padding-top: 5px;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 1500px;
+}
+.jumpup {
+    -webkit-transform: translate(0,-85px);
+    -ms-transform: translate(0,-85px);
+    -moz-transform: translate(0,-85px);
+    transform: translate(0,-85px);
+    display: none;
+   /* width: 52px;
+    height: 52px;*/
+}
+.viewrings-section{
+	  display:none;
+   text-transform: uppercase;
+	}
+.viewrings-section .design-head{
+	font-size:20px;
 }
