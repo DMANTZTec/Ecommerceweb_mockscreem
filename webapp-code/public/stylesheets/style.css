@@ -215,11 +215,12 @@ ul li a{
     background-color: #fff;
     right: 0;
   }
-.banner-wrapper .arrow-up{
+.fa.fa-angle-up.arrow-up{
 	color: #fff;
 	font-size: 27px;
 	padding-top: 5px;
 }
+
 #back-to-top:hover {
     background: #e9ebec;
 }

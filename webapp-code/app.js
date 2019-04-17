@@ -7,7 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , product_information = require('./routes/product_information');
 
 var app = express();
 
@@ -15,18 +16,20 @@ var app = express();
 app.set('port', process.env.PORT || 3001);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.use(express.favicon());
+/*app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(app.router);
+app.use(app.router);*/
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'src')));
 
-// development only
+/*// development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
-}
-
+}*/
+app.get('/product_information', product_information.product_information);
+app.get('/index', routes.index);
 app.get('/', routes.index);
 app.get('/users', user.list);
 
