@@ -302,8 +302,7 @@ p.design-head {
 .filter-head{
     margin: 15px 0 20px;
 }
-/*Media-qwery for all screen*/
-@media(min-width:320px)and (max-width:767px){
+/*Media-qwery for all screen*/ 
 	
 	.row.row-flex .details {
 	    padding: 5px 0;
